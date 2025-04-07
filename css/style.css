@@ -111,12 +111,12 @@ body {
 @keyframes vzriv {
   0%{ 
     opacity: 0;
-    transform: scale(2) rotate(200) translateY(-200px);
+    transform: translateY(-200px) scale(2) rotate(200deg);
     filter: blur(10px);
 }
   100%{ 
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(-20) scale(2) rotate(200deg);
     filter: blur(0);
 }
 }
@@ -124,30 +124,31 @@ body {
 @keyframes vkrut {
   0% {
     opacity: 0;
-    transform: rotateY(320) scale(1);
-    filter: blur(10px); 
+    transform: rotateY(-200) scale(1) rotate(200deg);
+    filter: blur(1px); 
 }
   100% { 
     opacity: 1;
-    transform: rotateY(0) scale(1);
-    filter: blur(1px); 
+    transform: rotateY(-20) scale(1) rotate(200deg);
+    filter: blur(3px); 
 }
 }
 
 @keyframes bum {
   0% { 
     opacity: 0;
-    transform: translateY(-350) scale(1.5) rotate(90deg); 
+    transform: translateY(-200) scale(1.5) rotate(90deg); 
     filter: blur(12px); 
 }
-  100%{ 
+  100%{
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(-20) scale(1.5) rotate(100deg); 
+    filter: blur(2px); 
 }
 }
 
 .l0{ 
-    animation: vzriv 0.8s ease-out 3s forwards; 
+  animation: vzriv 0.8s ease-out 3s forwards; 
 }
 .l1{ 
     animation: vkrut 2s ease-out 5s forwards; 
@@ -174,21 +175,31 @@ body {
     animation: bum 1s ease-out 4s forwards; 
 }
 
-.l0 .flash{ animation: fleshka 10s ease-out 10s forwards; 
+.l0 .flash{ 
+  animation: fleshka 10s ease-out 10s forwards; 
+  transform: translateX(120);
 }
-.l1 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l1 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l2 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l2 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l3 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l3 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l4 .flash{ animation: fleshka 0.3s ease-out 10s forwards; 
+.l4 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards; 
 }
-.l5 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l5 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l6 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l6 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l7 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+.l7 .flash{
+   animation: fleshka 0.3s ease-out 10s forwards;
 }
-.l8 .flash{ animation: fleshka 10s ease-out 10s forwards; 
+.l8 .flash{
+   animation: fleshka 10s ease-out 10s forwards; 
 }
