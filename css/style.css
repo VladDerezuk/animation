@@ -1,0 +1,194 @@
+body {
+  height: 100vh;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulsa 5s infinite ease-in-out;
+}
+
+@keyframes pulsa {
+  0%{
+    background-color: #000000; 
+}
+  50%{
+    background-color: #0a0a0a; 
+}
+  100%{
+    background-color: #000000; 
+}
+}
+
+.div{
+  position: relative;
+}
+
+.one{
+  font-size: 64px;
+  animation: out 3s forwards;
+}
+
+@keyframes out {
+    0%{
+    opacity: 0;
+    transform: scale(0.9);
+}
+  20%{
+    opacity: 1;
+    transform: scale(1); 
+}
+  50%{
+    opacity: 1; 
+}
+  100%{
+    opacity: 0; transform: scale(0.95);
+    filter: blur(6px);
+}
+}
+
+.epikkk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 80px;
+  font-weight: bold;
+  display: flex;
+  gap: 12px;
+  opacity: 1;
+  animation: ostanni 2s ease-in-out 5.5s infinite;
+}
+
+@keyframes ostanni {
+  0% { 
+    transform: scale(1);
+    text-shadow: 0 0 20px white; 
+}
+  50% {
+    transform: scale(1.05);
+    text-shadow: 40px white, 80px white; 
+    }
+  100% {
+     transform: scale(1); text-shadow: 0 0 20px white; 
+    }
+}
+
+.letter {
+  opacity: 0;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 20px white, 0 0 40px #00faff, 0 0 60px #00faff;
+}
+
+.flash {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  right: -30px;
+  bottom: -30px;
+  background: radial-gradient(#ffffff88, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes fleshka {
+  0% { 
+    opacity: 0;
+    transform: scale(0.5); 
+}
+  50% { 
+    opacity: 1;
+    transform: scale(2); 
+}
+  100% {
+    opacity: 0;
+    transform: scale(3);
+}
+}
+
+@keyframes vzriv {
+  0%{ 
+    opacity: 0;
+    transform: scale(2) rotate(200) translateY(-200px);
+    filter: blur(10px);
+}
+  100%{ 
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+}
+
+@keyframes vkrut {
+  0% {
+    opacity: 0;
+    transform: rotateY(320) scale(1);
+    filter: blur(10px); 
+}
+  100% { 
+    opacity: 1;
+    transform: rotateY(0) scale(1);
+    filter: blur(1px); 
+}
+}
+
+@keyframes bum {
+  0% { 
+    opacity: 0;
+    transform: translateY(-350) scale(1.5) rotate(90deg); 
+    filter: blur(12px); 
+}
+  100%{ 
+    opacity: 1;
+    transform: scale(1);
+}
+}
+
+.l0{ 
+    animation: vzriv 0.8s ease-out 3s forwards; 
+}
+.l1{ 
+    animation: vkrut 2s ease-out 5s forwards; 
+}
+.l2{ 
+    animation: bum 1s ease-out 4s forwards; 
+}
+.l3{ 
+    animation: vzriv 0.8s ease-out 3s forwards; 
+}
+.l4{ 
+    animation: vkrut 2s ease-out 5s forwards;
+}
+.l5{ 
+    animation: bum 1s ease-out 4s forwards;
+}
+.l6{ 
+    animation: vzriv 0.8s ease-out 3s forwards;
+}
+.l7{ 
+    animation: vkrut 2s ease-out 5s forwards;
+}
+.l8{ 
+    animation: bum 1s ease-out 4s forwards; 
+}
+
+.l0 .flash{ animation: fleshka 10s ease-out 10s forwards; 
+}
+.l1 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l2 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l3 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l4 .flash{ animation: fleshka 0.3s ease-out 10s forwards; 
+}
+.l5 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l6 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l7 .flash{ animation: fleshka 0.3s ease-out 10s forwards;
+}
+.l8 .flash{ animation: fleshka 10s ease-out 10s forwards; 
+}
